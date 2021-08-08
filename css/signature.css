@@ -1,0 +1,45 @@
+.signature {
+  display: flex;
+}
+
+.signature__canvas {
+  display: flex;
+  flex-direction: column;
+}
+
+.signature__canvas canvas {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  width: 350px;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 11%), 0 1px 3px rgba(0, 0, 0, 8%);
+}
+
+.signature__canvas p {
+  color: black;
+  font-size: 20px;
+}
+
+.signature__btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.signature__btns button {
+  width: 100px;
+  height: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 11%), 0 1px 3px rgba(0, 0, 0, 8%);
+}
+
+.signature__btns button:active {
+  transform: scale(0.98);
+}

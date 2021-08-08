@@ -1,0 +1,138 @@
+#main-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#clock {
+  margin-top: 7%;
+  font-size: 140px;
+}
+
+.about-username {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.about-username #greeting {
+  margin-top: 20px;
+  font-size: 70px;
+}
+
+.about-username #delete-data {
+  position: absolute;
+  right: -150px;
+  bottom: 5px;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 15px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  opacity: 0.95;
+}
+
+.about-username #delete-data:last-child:active {
+  transform: scale(0.98);
+}
+
+#todo-form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 25px;
+}
+
+#todo-form input {
+  margin-bottom: 15px;
+  font-size: 25px;
+  width: 340px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  opacity: 0.8;
+}
+
+#todo-form input::placeholder {
+  color: white;
+}
+
+#todo-list {
+  margin-left: 5px;
+}
+
+#todo-list li span {
+  margin-right: 10px;
+}
+
+#todo-list li button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  width: 29px;
+  height: 29px;
+  border-radius: 20%;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+#todo-list li button:active {
+  transform: scale(0.97);
+}
+
+#quote {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+}
+
+#quote p,
+span {
+  font-size: 17px;
+}
+
+#quote span {
+  margin: 0px 20px;
+}
+
+#background {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+}
+
+#background-img {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+#load-signature {
+  z-index: 2;
+  position: absolute;
+  left: -60px;
+  bottom: -10px;
+  transform: scale(0.5);
+}
+
+#weather {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#weather span {
+  font-size: 20px;
+  color: black;
+}
+
+#weather span:first-child {
+  margin-bottom: 5px;
+}
