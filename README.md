@@ -1,0 +1,3 @@
+# VanillaJS Challenge
+
+Final Assignment.
